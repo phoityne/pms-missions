@@ -1,0 +1,13 @@
+logDir : "logs"
+logLevel : "Debug"
+toolsDir : "tools"
+promptsDir : "prompts"
+resourcesDir : "resources"
+prompts:
+  - '>>>'
+  - ']#'
+  - ']$'
+  - ')?'
+  - 'Password:'
+  - 'password:'
+  - 'ghci>'

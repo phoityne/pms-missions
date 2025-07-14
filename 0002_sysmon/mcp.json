@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "sysmon-mcp-server": {
+      "type": "stdio",
+      "command": "pty-mcp-server",
+      "args": ["-y", "/work/haskell/pms/pms-missions/0002_sysmon/pty-mcp-server.yaml"]
+    }
+  }
+}

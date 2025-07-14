@@ -1,0 +1,60 @@
+[
+  {
+    "name": "pty-terminate",
+    "description": "Forcefully terminates an active pseudo-terminal (PTY) connection.",
+    "inputSchema": {"type": "object"}
+  },
+  {
+    "name": "pty-message",
+    "description": "pms-messages is a tool for sending structured instructions or commands to a running PTY session. It abstracts direct terminal input, allowing the LLM (MCP client) to interact with the PTY process in a controlled and programmable way.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "df -k"
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+  {
+    "name": "pty-ssh",
+    "description": "Establishes an SSH session in a pseudo-terminal with the specified arguments, allowing interaction with remote systems.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Arguments to be passed to the SSH command, such as user, host, and optional flags."
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+
+  {
+    "name": "alert-mail",
+    "description": "Sends an alert email. This tool accepts a single argument: a JSON-formatted string that includes both 'subject' and 'body' fields. The argument must be passed as a single string, enclosed in single quotes.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "JSON string containing 'subject' and 'body'. Must be passed as one string argument. Example: {\"subject\":\"Disk Alert\",\"body\":\"Disk usage exceeded 80% on host01.\"}"
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  }
+  
+]

@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "default-assets-mcp-server": {
+      "type": "stdio",
+      "command": "pty-mcp-server",
+      "args": ["-y", "/path/to/01_default-assets/pty-mcp-server.yaml"]
+    }
+  }
+}
