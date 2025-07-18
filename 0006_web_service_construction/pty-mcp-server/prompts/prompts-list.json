@@ -1,0 +1,8 @@
+[
+  {
+    "name": "web-service-prompt",
+    "description": "This prompt defines an AI agent tasked with building a web service on a Linux server using a user-specified programming language. The agent operates as root via a bash shell accessed through pty-message, using dnf for package installation. It must follow strict rules: issue one command at a time, escape input properly, and validate functionality via curl.",
+    "arguments": [
+    ]
+  }
+]

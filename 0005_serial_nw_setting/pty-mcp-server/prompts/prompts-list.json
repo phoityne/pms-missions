@@ -1,0 +1,9 @@
+[
+  {
+    "name": "serial-nw-setting-prompt",
+    "description": "This prompt guides an AI agent to connect to a Fortinet device via serial communication to check its FortiOS version. The agent interacts step-by-step using tools like serial-open and serial-message, retrieves the installed version, fetches the latest version from Fortinet’s official site, compares them, and reports whether an update is needed. User input (e.g., baud rate) is requested only when required.",
+    "arguments": [
+    ]
+  }
+]
+

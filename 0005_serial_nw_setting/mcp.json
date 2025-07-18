@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "serial-mcp-server": {
+      "type": "stdio",
+      "command": "pty-mcp-server",
+      "args": ["-y", "/path/to/0005_serial_nw_setting/pty-mcp-server.yaml"]
+    }
+  }
+}

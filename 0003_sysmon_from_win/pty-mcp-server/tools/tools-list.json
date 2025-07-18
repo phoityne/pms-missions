@@ -1,0 +1,82 @@
+[
+  {
+    "name": "proc-terminate",
+    "description": "Forcefully terminates a running process created via runProcess.",
+    "inputSchema": {"type": "object"}
+  },
+  {
+    "name": "proc-message",
+    "description": "Sends structured text-based instructions or commands to a subprocess started with runProcess. It provides a programmable interface for interacting with the process via standard input.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "df -k"
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+  {
+    "name": "proc-cmd",
+    "description": "The `proc-cmd` tool launches the Windows Command Prompt (`cmd.exe`) as a subprocess. It allows the AI to interact with the standard Windows shell environment, enabling execution of batch commands, file operations, and system configuration tasks in a familiar terminal interface.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+      },
+      "required": [
+      ]
+    }
+  },
+  {
+    "name": "proc-ps",
+    "description": "`proc-ps` launches the Windows PowerShell (`powershell.exe`) as a subprocess. It provides an interactive command-line environment where the AI can execute PowerShell commands, scripts, and system administration tasks. The shell is started with default options to keep it open and ready for further input.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+      },
+      "required": [
+      ]
+    }
+  },
+  {
+    "name": "proc-ssh",
+    "description": "`proc-ssh` launches an SSH client (`ssh`) as a subprocess using `runProcess`. It enables the AI to initiate remote connections to other systems via the Secure Shell protocol. The tool can be used to execute remote commands, access remote shells, or tunnel services over SSH. The required `arguments` field allows specifying the target user, host, and any SSH options (e.g., `-p`, `-i`, `-L`).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Arguments to be passed to the SSH command, such as user, host, and optional flags."
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+
+  {
+    "name": "alert-mail",
+    "description": "Sends an alert email. This tool accepts a single argument: a JSON-formatted string that includes both 'subject' and 'body' fields. The argument must be passed as a single string, enclosed in single quotes.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "JSON string containing 'subject' and 'body'. Must be passed as one string argument. Example: {\"subject\":\"Disk Alert\",\"body\":\"Disk usage exceeded 80% on host01.\"}"
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  }
+  
+]

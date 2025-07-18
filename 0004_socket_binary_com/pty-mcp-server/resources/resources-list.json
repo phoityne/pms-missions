@@ -1,0 +1,8 @@
+[
+  {
+    "name": "telnet-spec",
+    "uri": "telnet-spec.md",
+    "description": "A reference document describing the Telnet protocol control sequences, including IAC (Interpret As Command), DO, DONT, WILL, WONT, and option negotiation. This file outlines the byte-level structure of Telnet commands and explains how clients and servers communicate using control codes defined in RFC 854 and related extensions.",
+    "mimeType":"text/markdown"
+  }
+]

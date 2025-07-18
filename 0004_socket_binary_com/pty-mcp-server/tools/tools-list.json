@@ -1,0 +1,104 @@
+[
+
+  {
+    "name": "socket-open",
+    "description": "This tool initiates a socket connection to the specified host and port.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "The hostname or IP address to connect to (e.g., '127.0.0.1' or 'localhost')."
+        },
+        "port": {
+          "type": "string",
+          "description": "The port number to connect to, provided as a string (e.g., '5000')."
+        }
+      },
+      "required": [
+        "host",
+        "port"
+      ]
+    }
+  },
+  {
+    "name": "socket-close",
+    "description": "This tool close active socket connection that was previously established using the 'socket-opne' tool.",
+    "inputSchema": {"type": "object"}
+  },
+  {
+    "name": "socket-read",
+    "description": "Reads the specified number of bytes from the socket. The 'size' parameter indicates how many bytes to read.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer",
+          "description": "The number of bytes to read from the socket"
+        }
+      },
+      "required": [
+        "size"
+      ]
+    }
+  },
+  {
+    "name": "socket-write",
+    "description": "Write a sequence of bytes to the socket",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          },
+          "description": "An array of byte values (integers between 0 and 255) to send"
+        }
+      },
+      "required": [
+        "data"
+      ]
+    }
+  },
+  {
+    "name": "socket-message",
+    "description": "This tool sends a message over the active socket connection.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "The message content to be sent over the socket connection."
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+  {
+    "name": "socket-telnet",
+    "description": "A simple Telnet-like communication tool over raw TCP sockets. This tool connects to a specified host and port, sends and receives data, and removes any Telnet IAC (Interpret As Command) sequences from the communication stream. Note: This is a simplified Telnet implementation and does not support full Telnet protocol features.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "The hostname or IP address to connect to (e.g., '127.0.0.1' or 'localhost')."
+        },
+        "port": {
+          "type": "string",
+          "description": "The port number to connect to, provided as a string (e.g., '5000')."
+        }
+      },
+      "required": [
+        "host",
+        "port"
+      ]
+    }
+  }
+
+]

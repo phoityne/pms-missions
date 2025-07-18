@@ -1,0 +1,8 @@
+[
+  {
+    "name": "socket-telnet-prompt",
+    "description": "To log in to a Telnet server, begin with socket-open, handle Telnet negotiation by replying IAC WONT to any IAC DO, and use socket-message to send the username and password when prompted. Ask the user for missing info as needed. Log all raw and interpreted data. Close with socket-close.",
+    "arguments": [
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "web-security-spec",
+    "uri": "web-security-spec.md",
+    "description": "This document provides a security checklist for Linux-based web services created using web-service-prompt. It highlights essential hardening steps for both the Linux system and the web server. Recommendations include applying strict file permissions, disabling unused services, keeping the system updated, minimizing HTTP headers, limiting request rates, and logging server activity.",
+    "mimeType":"text/markdown"
+  }
+]

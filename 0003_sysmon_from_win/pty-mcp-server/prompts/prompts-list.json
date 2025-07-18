@@ -1,0 +1,8 @@
+[
+  {
+    "name": "disk-usage",
+    "description": "Check disk usage on all target hosts. If any mount point exceeds 50% usage, notify the administrator using the alert-mail tool.",
+    "arguments": [
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "serial-spec",
+    "uri": "serial-spec.md",
+    "description": "This document outlines standard serial communication settings for connecting to network devices such as Fortinet appliances. It includes typical parameters like baud rate, data bits, parity, and flow control, helping ensure reliable terminal access during configuration or diagnostics.",
+    "mimeType":"text/markdown"
+  }
+]

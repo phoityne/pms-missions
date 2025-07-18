@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "construct-mcp-server": {
+      "type": "stdio",
+      "command": "pty-mcp-server",
+      "args": ["-y", "/path/to/0004_socket_binary_com/pty-mcp-server.yaml"]
+    }
+  }
+}

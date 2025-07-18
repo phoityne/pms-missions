@@ -1,0 +1,8 @@
+[
+  {
+    "name": "haskell-cabal-debug-prompt",
+    "description": "This prompt enables AI-driven debugging of Haskell projects using Cabal and GHCi over a virtual terminal (PTY). It launches cabal repl via pty-cabal, communicates via pty-message, and interprets user instructions to set breakpoints, inspect values, and evaluate expressions inside the REPL.",
+    "arguments": [
+    ]
+  }
+]
