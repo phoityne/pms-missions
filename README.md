@@ -33,20 +33,21 @@ This document outlines how these components work together to support a modular a
 missions/
   └─ system_monitoring/
        ├─ pty-mcp-server.yaml
-       ├─ logs/
-       ├─ resources/
-       │    ├─ resources-list.yaml     # List of resource files to be loaded
-       │    ├─ mission.yaml            # Overall mission description (goal, constraints)
-       │    ├─ hosts.yaml              # Server list
-       │    ├─ log_paths.yaml          # Log file locations
-       │    └─ specs.yaml              # Policy or system specs
-       ├─ tools/
-       │    ├─ tools-list.yaml         # List of executable tools for the AI
-       │    └─ kubectl.yaml            # Kubernetes CLI access (optional)
-       └─ prompts/
-            ├─ prompts-list.yaml       # List of prompt files to be loaded
-            ├─ disk_check.yaml         # Sub-mission: disk usage check
-            └─ service_status.yaml     # Sub-mission: service status check
+       └─ pty-mcp-server/
+           ├─ logs/
+           ├─ resources/
+           │    ├─ resources-list.yaml     # List of resource files to be loaded
+           │    ├─ mission.yaml            # Overall mission description (goal, constraints)
+           │    ├─ hosts.yaml              # Server list
+           │    ├─ log_paths.yaml          # Log file locations
+           │    └─ specs.yaml              # Policy or system specs
+           ├─ tools/
+           │    ├─ tools-list.yaml         # List of executable tools for the AI
+           │    └─ kubectl.yaml            # Kubernetes CLI access (optional)
+           └─ prompts/
+                ├─ prompts-list.yaml       # List of prompt files to be loaded
+                ├─ disk_check.yaml         # Sub-mission: disk usage check
+                └─ service_status.yaml     # Sub-mission: service status check
 ```
 
 ## mcp.json
