@@ -37,9 +37,7 @@ missions/
            ├─ logs/
            ├─ resources/
            │    ├─ resources-list.yaml     # List of resource files to be loaded
-           │    ├─ mission.yaml            # Overall mission description (goal, constraints)
            │    ├─ hosts.yaml              # Server list
-           │    ├─ log_paths.yaml          # Log file locations
            │    └─ specs.yaml              # Policy or system specs
            ├─ tools/
            │    ├─ tools-list.yaml         # List of executable tools for the AI
