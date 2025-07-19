@@ -1,0 +1,42 @@
+[
+  {
+    "name": "proc-terminate",
+    "description": "Forcefully terminates a running process created via runProcess.",
+    "inputSchema": {"type": "object"}
+  },
+  {
+    "name": "proc-message",
+    "description": "Sends structured text-based instructions or commands to a subprocess started with runProcess. It provides a programmable interface for interacting with the process via standard input.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "df -k"
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+  {
+    "name": "proc-winpty",
+    "description": "A Windows tool that launches an interactive console application via winpty, providing proper PTY (pseudo-terminal) support. Useful for executing programs like ssh, telnet, or bash that require a terminal interface.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Command-line arguments passed to the application to be run under winpty. The first element should be the executable name (e.g., 'telnet'), followed by any required parameters (e.g., 'hostname', 'port')."
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  }
+]

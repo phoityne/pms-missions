@@ -1,0 +1,8 @@
+[
+  {
+    "name": "cabal-debug-spec",
+    "uri": "cabal-debug-spec.md",
+    "description": "This document provides a reference for debugging Haskell projects using cabal repl and GHCi. It lists common debugger commands in a help-style format, including how to set and delete breakpoints, step through code, inspect variables, evaluate expressions, and manage the session.",
+    "mimeType":"text/markdown"
+  }
+]
