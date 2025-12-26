@@ -3,6 +3,7 @@ logLevel : "Debug"
 toolsDir : "pty-mcp-server/tools"
 promptsDir : "pty-mcp-server/prompts"
 resourcesDir : "pty-mcp-server/resources"
+sandboxDir : "pty-mcp-server/sandbox"
 prompts:
   - '>>>'
   - '...'
@@ -40,7 +41,7 @@ environment:
   ProgramData: "C:\\ProgramData"
   SystemRoot: "C:\\Windows"
 timeoutMicrosec: 1000000
-
+sandboxNW : "192.168.0.0/24"
 serial:
   device: "COM3"
   commSpeed: 9600
