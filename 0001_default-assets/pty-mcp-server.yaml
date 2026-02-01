@@ -22,19 +22,17 @@ invalidChars:
 invalidCmds:
   - del
   - erase
-  - rd
   - rmdir
-  - format
-  - shutdown
-  - restart
-  - taskkill
   - rm
-  - dd
-  - chmod
-  - chown
-  - shutdown
-  - reboot
+  - format
   - kill
+  - taskkill
+  - su
+  - sudo
+  - restart
+  - reboot
+  - shutdown
+
   
 # not yet implemented parameters.
 environment:
