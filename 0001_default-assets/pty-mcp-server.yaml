@@ -38,7 +38,7 @@ invalidCmds:
 environment:
   ProgramData: "C:\\ProgramData"
   SystemRoot: "C:\\Windows"
-timeoutMicrosec: 1000000
+timeoutMicrosec: 300000000
 sandboxNW : "192.168.0.0/24"
 serial:
   device: "COM3"
