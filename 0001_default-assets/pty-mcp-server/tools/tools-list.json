@@ -43,7 +43,7 @@
       ]
     }
   },
-  
+
   {
     "name": "pty-bash",
     "description": "pty-bash is a tool that launches a bash shell in a pseudo terminal (PTY). It allows the LLM (MCP client) to interact with a real Linux shell in an interactive terminal (PTY). This enables AI to run system commands, collect information, and handle prompts or TUI-based tools as if operated by a human, making it effective for dynamic Linux-based automation and diagnostics.",
@@ -216,6 +216,27 @@
         "arguments": {
           "type": "string",
           "description": "df -k"
+        }
+      },
+      "required": [
+        "arguments"
+      ]
+    }
+  },
+  {
+    "name": "proc-async-read",
+    "description": "Reads available output from the active PTY session without blocking. If no data is available, returns an empty string.",
+    "inputSchema": {"type": "object"}
+  },
+  {
+    "name": "proc-async-write",
+    "description": "Writes input data to the active PTY session and returns immediately without waiting for completion.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "string",
+          "description": "Data to write to the PTY session, e.g., 'ls -l\\n'"
         }
       },
       "required": [
