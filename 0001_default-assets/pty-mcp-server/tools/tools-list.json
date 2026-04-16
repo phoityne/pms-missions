@@ -224,12 +224,12 @@
     }
   },
   {
-    "name": "proc-async-read",
+    "name": "proc-read",
     "description": "Reads available output from the active PTY session without blocking. If no data is available, returns an empty string.",
     "inputSchema": {"type": "object"}
   },
   {
-    "name": "proc-async-write",
+    "name": "proc-write",
     "description": "Writes input data to the active PTY session and returns immediately without waiting for completion.",
     "inputSchema": {
       "type": "object",
