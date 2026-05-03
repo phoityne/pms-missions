@@ -32,6 +32,10 @@ invalidCmds:
   - restart
   - reboot
   - shutdown
+agentAllowedCmds:
+  - cmd.exe
+  - bash
+
 
   
 # not yet implemented parameters.
