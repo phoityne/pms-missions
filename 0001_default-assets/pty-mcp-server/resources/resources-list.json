@@ -1,8 +1,8 @@
 [
   {
-    "name": "pms_hello",
-    "uri": "pms_hello.md",
-    "description": "hello world from pty-mcp-server.",
-    "mimeType":"text/markdown"
+    "name": "pms_readme",
+    "uri": "file:///pms_readme.md",
+    "description": "pty-mcp-server overview, homepage URL, and GitHub URL.",
+    "mimeType": "text/markdown"
   }
 ]

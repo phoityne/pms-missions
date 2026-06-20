@@ -12,8 +12,8 @@ agentAllowedCmds:
   - bash
   - /bin/bash
 sandboxNetworks:
-  - 10.0.0.0/8
-  - 172.16.0.0/12
+#  - 10.0.0.0/8
+#  - 172.16.0.0/12
   - 192.168.0.0/16
 invalidPatterns:
   - 'del\s'
@@ -58,4 +58,4 @@ invalidCmds:
   - restart
   - reboot
   - shutdown
-timeoutMicrosec: 30000000
+  
